@@ -1,22 +1,22 @@
-name: ros-ci
+name: rolling-devel
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 on:
   push:
-    branches: [ ros2 ]
+    branches: [ rolling-devel ]
   pull_request:
-    branches: [ ros2 ]
+    branches: [ rolling-devel ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  ros2-ci:
+  rolling-devel-ci:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         ros_distribution:
           # - dashing
-          - foxy
+          # - foxy
           # - galactic
           - rolling
         include:
@@ -25,9 +25,9 @@ jobs:
           #   ros_distribution: dashing
           #   ros_version: 2
             # Foxy Fitzroy (June 2020 - May 2023)
-          - docker_image: ubuntu:focal
-            ros_distribution: foxy
-            ros_version: 2
+          # - docker_image: ubuntu:focal
+          #   ros_distribution: foxy
+          #   ros_version: 2
             # Galactic Geochelone (May 2021)
           # - docker_image: ubuntu:focal
           #   ros_distribution: galactic
