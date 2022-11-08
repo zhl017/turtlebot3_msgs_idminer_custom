@@ -1,3 +1,7 @@
+# IDMINER CUSTOM ITEM
+## SensorStateMecanum.msg
+add 2 motor (rear left & rear right) for mecanum
+
 # TurtleBot3
 
 <img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/turtlebot3/logo_turtlebot3.png" width="300">
